@@ -1,0 +1,40 @@
+<view class="comment-detail-box">
+  <view class="comment-main-box">
+    <view class="comment-title">
+      评论......(共{{total}}条)
+    </view>
+    <!--评论开始-->
+    <block wx:for="{{commentList}}" wx:for-index="itemIndex">
+      <view class="comment-item">
+        <!--评论头部-->
+        <view class="comment-item-head">
+          <view class="left-img">
+            <image src="{{item.wxuser.wx_img}}"></image>
+          </view>
+          <view class="right-user">
+            <text>{{item.wxuser.wx_name}}</text>
+          </view>
+        </view>
+        <!--评论主体-->
+        <view class="comment-body">
+          <view class="comment-txt">
+            <text>{{item.txt}}</text>
+          </view>
+        </view>
+        <view class="comment-time">{{item.create_time}}</view>
+      </view>
+    </block>
+    <!--评论结束-->
+  </view>
+
+
+</view>
+<!--input组件开始-->
+<view class="input-box">
+  <view class="send-msg-box">
+    <view class="input-item">
+      <input bindinput='bindCommentInput' bindconfirm='submitComment' class="input keyboard-input" placeholder='说点什么吧......' value="{{inputValue}}"></input>
+    </view>
+    <view class="submit-btn" catchtap='submitComment'>发送</view>
+  </view>
+</view>

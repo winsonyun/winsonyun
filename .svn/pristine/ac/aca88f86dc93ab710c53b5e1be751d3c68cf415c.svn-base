@@ -1,0 +1,24 @@
+<import src="../vote-activity-item/vote-activity-item.wxml"/>
+<!--indicator-dots显示圆点 autoplay自动播放 interval设置播放间隔时间 circular开启循环播放 -->
+<swiper indicator-dots='true' autoplay='true' interval='2000' circular='true'>
+  <swiper-item>
+    <image src='../../../images/comment/train-1.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='../../../images/comment/train-2.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='../../../images/comment/train-3.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='../../../images/comment/train-4.jpg'></image>
+  </swiper-item>
+</swiper>
+<view>
+   <view class="find">
+    <input type='text' name="activity_name" class="find_text" placeholder="请输入关键字"></input>
+    <view class='finding'>搜索</view>
+   </view>
+</view>
+<template is="activitylate"></template>
+

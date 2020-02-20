@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/vote/vote",
+    "pages/ranking/ranking",
+    "pages/ranking/ranklist/ranklist",
+    "pages/votedetails/votedetails",
+    "pages/comment/comment",
+    "pages/vote/vote-activity/vote-activity",
+    "pages/vote/vote-activity-item/vote-activity-item",
+    "pages/main/main",
+    "pages/main/main-item/main-item",
+    "pages/vote/voteing/voteing"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3ad1ab",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "images/home1.png",
+        "selectedIconPath": "images/home2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/vote/vote-activity/vote-activity",
+        "iconPath": "images/hd1.png",
+        "selectedIconPath": "images/hd2.png",
+        "text": "活动"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

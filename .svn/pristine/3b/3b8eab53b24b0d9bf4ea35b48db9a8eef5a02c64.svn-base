@@ -1,0 +1,67 @@
+<import src="ranklist/ranklist.wxml"/>
+<view class="topView">
+  <text class="endtimeview">{{time}}结束</text>
+  <text class="remainview">剩余{{remainTime}}天</text>
+</view>
+
+<view class="titleview">票数排行榜</view>
+<!--排行榜-->
+<view class='rank_view'>
+  <!--123-->
+  <view class="big_rankbox">
+    <view class='rank_box'>
+      <!--第一个-->
+      <view catchtap='tovotedetails' data-vote_id="{{firstfew[1].works_id}}">
+        <view class="rank_item">
+          <text class="ranknum">NO.2</text>
+          <!--头像-->
+          <view class="rank_img2">
+            <image src='{{firstfew[1].works_img}}'></image>
+          </view>
+          <!--昵称-->
+          <text class="ranknickname">{{firstfew[1].works_name}}</text>
+          <text class='rank_votenum'>{{firstfew[1].voteNum}}票</text>
+        </view>
+      </view>
+      <view catchtap='tovotedetails' data-vote_id="{{firstfew[0].works_id}}">
+        <!--第二个-->
+        <view class="rank_item1">
+          <text class="ranknum">NO.1</text>
+          <!--头像-->
+          <view class="rank_img1">
+            <image src='{{firstfew[0].works_img}}'></image>
+          </view>
+          <!--昵称-->
+          <text class="ranknickname1">{{firstfew[0].works_name}}</text>
+          <text class='rank_votenum'>{{firstfew[0].voteNum}}票</text>
+        </view>
+      </view>
+       <!--第三个-->
+      <view catchtap='tovotedetails' data-vote_id="{{firstfew[2].works_id}}">
+        <view class="rank_item">
+          <text class="ranknum">NO.3</text>
+          <!--头像-->
+          <view class="rank_img2">
+            <image src='{{firstfew[2].works_img}}'></image>
+          </view>
+          <!--昵称-->
+          <text class="ranknickname">{{firstfew[2].works_name}}</text>
+          <text class='rank_votenum'>{{firstfew[2].voteNum}}票</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--清除浮动  使view能够被撑开 自动适应大小-->
+  <view class='clear'></view>
+</view>
+
+<!--排行列表-->
+<view class='ranklist_view'>
+  <block wx:for="{{ranklist}}">
+    <view catchtap='tovotedetails' data-vote_id="{{item.works_id}}">
+    <template is="ranklist" data="{{...item}}"></template>
+    </view>
+  </block>
+</view>
+
+

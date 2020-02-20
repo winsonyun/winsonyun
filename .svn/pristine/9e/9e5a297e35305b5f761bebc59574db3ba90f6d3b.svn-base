@@ -1,0 +1,26 @@
+/* pages/votedetails/votedetails.wxss */
+
+
+view{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20rpx;
+}
+
+
+.titleview .titletent {
+  font-size: 56rpx;
+}
+
+.titleview .author {
+  font-size: 34rpx;
+  float: right;
+  margin-top: 30rpx;
+}
+
+.fenge{
+  border: 1px solid black;
+  margin-top: 0px;
+  background-color: black;
+
+}

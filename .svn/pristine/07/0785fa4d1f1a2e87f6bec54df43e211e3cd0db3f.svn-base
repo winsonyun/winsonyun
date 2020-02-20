@@ -1,0 +1,35 @@
+<!--pages/votedetails/votedetails.wxml-->
+
+
+<view>
+  <text class='activity'>{{worksdetail[0].activity.activity_name}}</text>
+</view>
+<view class='titleview'>
+  <text class='titletent'>{{worksdetail[0].works_name}}</text>
+</view>
+<view>
+  <text class='author'>作者：{{worksdetail[0].author.author_name}}</text>
+</view>
+
+<view class='imgview'>
+  <image src='https://aiyclicc.cn/upload/{{worksdetail[0].works_img}}'></image>
+</view>
+<view class='funcview'>
+  <image src='../../images/icon/ll.png'></image>
+  <text>{{worksdetail[0].readingNum}}</text>
+  <image catchtap='voteclick' src='../../images/icon/dz.png'></image>
+  <text>{{worksdetail[0].voteNum}}</text>
+  <image catchtap="commentclick" src='../../images/icon/pl.png'></image>
+  <text>评论</text>
+</view>
+
+<view>
+  <text>投票记录:</text>
+</view>
+<block wx:for="{{worksdetail[0].vlist}}" wx:for-index="itemIndex">
+  <view class='jilu'>
+    <image src='https://aiyclicc.cn/upload/{{item.wxuser.wx_img}}'></image>
+    <text class='name'>{{item.wxuser.wx_name}}</text>
+    <text class='time'>{{item.voteTime}}</text>
+  </view>
+</block>

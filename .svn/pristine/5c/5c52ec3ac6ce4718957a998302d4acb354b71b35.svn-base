@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/vote/vote",
+    "pages/ranking/ranking",
+    "pages/ranking/ranklist/ranklist",
+    "pages/votedetails/votedetails",
+    "pages/comment/comment",
+    "pages/vote/vote-activity/vote-activity",
+    "pages/vote/vote-activity-item/vote-activity-item",
+    "pages/main/main",
+    "pages/main/main-item/main-item"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/welcome/welcome",
+        "text": "一元投"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

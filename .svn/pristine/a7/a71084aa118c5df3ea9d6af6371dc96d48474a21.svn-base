@@ -1,0 +1,34 @@
+<!--pages/votedetails/votedetails.wxml-->
+<view class='titleview'>
+  <text class='titletent'>{{worksdetail[0].works_name}}</text>
+</view>
+<view>
+   <text class='author'>作者：{{worksdetail[0].author.author_name}}</text>
+</view>
+
+<view class='imgview'>
+  <image src='{{worksdetail[0].works_img}}'></image>
+</view>
+<view class='funcview'>
+  <image src='../../images/icon/ll.png'></image>
+  <text>{{worksdetail[0].readingNum}}</text>
+  <image src='../../images/icon/dz.png'></image>
+  <text>{{worksdetail[0].voteNum}}</text>
+  <image src='../../images/icon/pl.png'></image>
+  <text>评论</text>
+</view>
+
+<view>
+  <text>投票记录:</text>
+</view>
+
+<view class='fenge' style='1px solid black'></view>
+<block wx:for="{{worksdetail[0].vlist}}" wx:for-index="itemIndex">
+<view class='jilu'>
+  <text>{{item.wxuser.wx_name}}</text>
+  
+    <text class='jilutime'>{{item.voteTime}}</text>
+ 
+
+</view>
+ </block>

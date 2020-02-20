@@ -1,0 +1,25 @@
+<import src="../vote-activity-item/vote-activity-item.wxml"/>
+<!--indicator-dots显示圆点 autoplay自动播放 interval设置播放间隔时间 circular开启循环播放 -->
+<swiper catchtap='tomain' indicator-dots='true' autoplay='true' interval='2000' circular='true'>
+<block wx:for="{{banlanimg}}">
+  <swiper-item>
+    <image src='../{{item.activity_img}}'></image>
+  </swiper-item>
+  </block> 
+</swiper>
+<view>
+   <view class="find">
+    <input bindinput='bindCommentInput' bindconfirm='submitComment' type='text' name="activity_name"                class="find_text" placeholder="请输入关键字" value='{{inputValue}}'></input>
+    <view class='finding' catchtap='submitComment'>搜索</view>
+   </view> 
+</view>
+<block wx:for="{{activitylist}}">
+  <view class="view-item">
+  <template is="activitylate" data="{{...item}}"></template>
+   <view class='activity-things'>
+    <text catchtap='tomain' class='activity-vote' data-activityId='{{item.activity_id}}'>投票</text>
+    <text catchtap='toranking' class='activity-rank' data-activityId='{{item.activity_id}}'>查看排名</text>
+   </view>
+  </view>
+</block> 
+

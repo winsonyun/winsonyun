@@ -1,0 +1,83 @@
+/* pages/votedetails/votedetails.wxss */
+
+page {
+  display: block;
+  min-height: 100%;
+  background-color: #f0f0f0;
+  
+}
+
+
+view {
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 10rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  text-indent: 10rpx
+}
+
+.titleview .titletent {
+  font-size: 40rpx;
+}
+
+.titleview .author {
+  font-size: 34rpx;
+  float: right;
+  margin-top: 30rpx;
+  margin-right: 5rpx;
+  
+}
+
+.fenge {
+  margin-top: 0px;
+}
+
+
+.imgview {
+  height: 500rpx;
+  overflow: hidden
+}
+
+.imgview image{
+  width: 100%;
+  height: 100%;
+  float: left;
+  
+}
+.funcview{
+  height: 80rpx;
+  
+}
+.funcview image{
+  height: 60rpx;
+  width: 60rpx;
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+}
+.funcview text{
+  height: 80rpx;
+  
+}
+.jilu{
+  height: 100rpx;
+  overflow: hidden
+}
+.jilu .name{
+ 
+ float: left
+}
+.jilu .time{
+margin-right: 100rpx;
+margin-top: 25rpx;
+float: right
+}
+.jilu image{
+  height: 100rpx;
+  width: 100rpx;
+  float: left
+}
+.activity{
+  font-size: 80rpx;
+  margin-left: 120rpx
+}

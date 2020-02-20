@@ -1,0 +1,23 @@
+<import src="main-item/main-item.wxml" />
+<!--indicator-dots显示圆点 autoplay自动播放 interval设置播放间隔时间 circular开启循环播放 -->
+<swiper indicator-dots='true' autoplay='true' interval='3000' circular='true'>
+  <block wx:for="{{haedimag}}">
+    <swiper-item>
+      <image src="{{item.activity_img}}" data-activityId="{{item.activity_id}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="Dimge" style="background:url('../../images/2d.jpg')">
+   <view class="findmain">
+    <input type='text' name="activity_name" class="find_text" placeholder="请输入作品名"></input>
+    <view class='finding'>搜索</view>
+   </view>
+</view>
+<!--<block wx:for="{{postList}}">-->
+  <view catchtap='topostdetail' data-postId="{{item.post_id}}">
+    <template is="main-item" data="{{...item}}">
+    
+    </template>
+  </view>
+<!--</block>-->
+

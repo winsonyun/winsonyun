@@ -1,0 +1,16 @@
+<template name="ranklist">
+  <view class='lfy_4xuanshou_box'>
+    <view class='lfy_4xuanshou_box_content '>
+      <view class="lfy_ph_number">{{voteNum}}</view>
+      <view class="lfy_4touxiang_img">
+        <image class="lfy_4imghigh1" src="https://aiyclicc.cn/upload/{{works_img}}"></image>
+      </view>
+      <text class="lfy_4name1">{{works_name}}</text>
+      <text class="lfy_4piao1">{{works_content}}</text>
+    </view>
+    <!--清除浮动  使view能够被撑开 自动适应大小-->
+    <view class='clear'></view>
+  </view> 
+</template>
+
+

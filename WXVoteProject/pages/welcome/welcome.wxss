@@ -1,0 +1,31 @@
+/*背景颜色*/
+page{
+  background-color: #ecc0ab;
+  overflow:hidden; 
+position:fixed; 
+margin: 0px; 
+}
+
+.containner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containner .title text{
+  color: #9f4311;
+}
+.title{
+  margin-top:200rpx; 
+}
+
+.button{
+   margin-top:500rpx; 
+   height: 80rpx;
+}
+.button button{
+  border: 1px solid #9f4311;
+  font-size: 28rpx;
+  line-height:  80rpx;
+  font-weight:bold;
+}

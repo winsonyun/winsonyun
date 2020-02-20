@@ -1,0 +1,24 @@
+<!--pages/votedetails/votedetails.wxml-->
+<view class='titleview'>
+  <text class='titletent'>标题</text>
+
+  <text class='author'>作者</text>
+</view>
+
+<view class='imgview'>
+  <image></image>
+</view>
+<view class='funcview'>
+  <text>浏览次数</text>
+  <text>投票数</text>
+  <text>评论</text>
+</view>
+
+<view>
+  <text>投票记录</text>
+</view>
+<view class='fenge' style='1px solid black'></view>
+<view>
+  <text>投票人</text>
+  <text>  投票时间</text>
+</view>

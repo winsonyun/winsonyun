@@ -1,0 +1,56 @@
+.lfy_4xuanshou_box {
+    padding: 4% 0;
+    width: 94%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-top: solid 1px #f5f5f5;
+}
+.lfy_4xuanshou_box_content {
+    width: 90%;
+    margin: 0 auto;
+   
+}
+.lfy_ph_number {
+    width: 20px;
+    float: right;
+    margin-top: 5%;
+    font-size: 14px;
+    color: #758697;
+}
+.lfy_4touxiang_img {
+    float: left;
+    margin-top: 2px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.lfy_4imghigh1{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.lfy_4name1 {
+    float: left;
+    width: 60%;
+    margin-top: 1%;
+    margin-left: 2%;
+    color: #758697;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.lfy_4piao1 {
+    float: left;
+    color: #758697;
+    width: 31%;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.clear{
+  clear: both;
+}

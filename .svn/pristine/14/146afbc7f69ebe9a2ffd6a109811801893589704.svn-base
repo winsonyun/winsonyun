@@ -1,0 +1,8 @@
+<view class="containner">
+  <view class="title">
+    <text>投票小程序</text>
+  </view>
+  <view class='button'>
+    <button open-type='getUserInfo' bindgetuserinfo='getUserInfo' lang='zh_CN'>点击进入小程序</button>
+  </view>
+</view>

@@ -1,0 +1,132 @@
+// pages/post/postcomment/postcomment.js
+var app = getApp();
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    post_id: 0,
+    count: 0,
+    total: 0,
+    commentList: []
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function(options) {
+    console.log(options);
+    var post_id = options.post_id;
+    this.setData({
+      post_id: post_id
+    })
+
+    utils.httpchen(app.globalData.baseUrl + "wx/getcommentcount", {
+      post_id: options.post_id
+    }, this.opreateCount);
+    utils.httpchen(app.globalData.baseUrl + "wx/getcommentlist", {
+      post_id: options.post_id,
+      count: 0
+    }, this.opreateCommentList);
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function() {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function() {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function() {
+    utils.httpchen(app.globalData.baseUrl + "wx/getcommentlist", {
+      post_id: this.data.post_id,
+      count: this.data.count
+    }, this.opreateCommentList);
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function() {
+
+  },
+  opreateCount: function(res) {
+    console.log(res);
+    this.setData({
+      total: res.msg
+    })
+  },
+  opreateCommentList: function(res) {
+    for (var i = 0; i < res.msg.length; i++) {
+      res.msg[i].create_time = utils.getDiffTime(res.msg[i].create_time)
+    }
+    var count = this.data.count;
+    count = count + res.msg.length;
+    var commentList = this.data.commentList;
+    commentList = commentList.concat(res.msg);
+
+    this.setData({
+      commentList: commentList,
+      count: count
+    })
+  },
+  //获取文本框的值
+  bindCommentInput: function(e) {
+    console.log(e);
+    var setInput={};
+    setInput["inputValue"]=e.detail.value;
+    this.setData(setInput)
+  },
+  submitComment: function(e) {
+
+    utils.httpchen(app.globalData.baseUrl + "wx/addcomment", {
+      post_id: this.data.post_id,
+      wx_user_id: wx.getStorageSync("user_id"),
+      txt: this.data.inputValue
+    }, this.opreateResult);
+  },
+  opreateResult:function(res){
+    this.setData({
+      inputValue:""
+    })
+
+    wx.showToast({
+      title: '评论成功',
+      mask:true,
+      duration:2000,
+      icon:"success"
+    })
+  }
+})

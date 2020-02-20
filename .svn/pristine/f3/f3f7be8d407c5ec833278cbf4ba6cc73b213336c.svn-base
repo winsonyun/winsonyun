@@ -1,0 +1,27 @@
+<template name="ranklist">
+  <view class='lfy_4xuanshou_box'>
+    <view class='lfy_4xuanshou_box_content '>
+      <view class="lfy_ph_number">4</view>
+      <view class="lfy_4touxiang_img">
+        <image class="lfy_4imghigh1" src="../../images/erha.jpg"></image>
+      </view>
+      <text class="lfy_4name1">xiaom</text>
+      <text class="lfy_4piao1">1000piao</text>
+    </view>
+    <!--清除浮动  使view能够被撑开 自动适应大小-->
+    <view class='clear'></view>
+  </view> 
+  <view class='lfy_4xuanshou_box'>
+    <view class='lfy_4xuanshou_box_content '>
+      <view class="lfy_ph_number">4</view>
+      <view class="lfy_4touxiang_img">
+        <image class="lfy_4imghigh1" src="../../images/erha.jpg"></image>
+      </view>
+      <text class="lfy_4name1">xiaom</text>
+      <text class="lfy_4piao1">1000piao</text>
+    </view>
+    <view class='clear'></view>
+  </view>
+</template>
+
+

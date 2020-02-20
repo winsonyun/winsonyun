@@ -1,0 +1,13 @@
+<template name="activitylate">
+<view class='vote-activity-item-view'>
+  <view class='activity-img'><image src='../{{activity_img}}'></image></view>
+  <view class='activity-name'><text>{{activity_name}}</text></view>
+  <view class='activity-time'>
+  <text class='activity-starTime'>{{start_time}}</text>~<text class='activity-endTime'>{{start_time}}</text>
+  </view>
+  <view class='activity-things'>
+    <text class='activity-vote'>投票</text>
+    <text class='activity-rank'>查看排名</text>
+  </view>
+</view>
+</template>

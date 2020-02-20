@@ -1,0 +1,14 @@
+<!--pages/main/main-item/main-item.wxml-->
+<template name="main-item">
+  <view class='content'>
+     <view class='Vimge' style='position:relative'>
+        <image class="movie-img" src='{{works_img}}'></image>
+        <view class='move-po' style=' position: absolute'>编号:{{works_id}}</view>
+        <view class="detail">
+            <text class="ratingw">{{works_name}}\n</text>
+            <text class="rating">{{voteNum}}票</text>
+             <button class='xq-button' catchtap='payFo' data-works_id='{{works_id}}'>详情</button>
+        </view>
+      </view>
+  </view>
+</template>

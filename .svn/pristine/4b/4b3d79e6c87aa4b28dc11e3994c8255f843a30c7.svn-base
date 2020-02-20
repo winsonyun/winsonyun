@@ -1,0 +1,56 @@
+<import src="ranklist/ranklist.wxml"/>
+<view class="topView">
+  <text class="endtimeview">2019/6/4结束</text>
+  <text class="remainview">剩余20天</text>
+</view>
+
+<view class="titleview">票数排行榜</view>
+<!--排行榜-->
+<view class='rank_view'>
+  <!--123-->
+  <view class="big_rankbox">
+    <view class='rank_box'>
+      <!--第一个-->
+      <view class="rank_item">
+        <text class="ranknum">NO.2</text>
+        <!--头像-->
+        <view class="rank_img2">
+          <image src='../../images/erha.jpg'></image>
+        </view>
+        <!--昵称-->
+        <text class="ranknickname">小马</text>
+        <text class='rank_votenum'>1000票</text>
+      </view>
+      <!--第二个-->
+      <view class="rank_item1">
+        <text class="ranknum">NO.1</text>
+        <!--头像-->
+        <view class="rank_img1">
+          <image src='../../images/erha.jpg'></image>
+        </view>
+        <!--昵称-->
+        <text class="ranknickname1">小明</text>
+        <text class='rank_votenum'>1000票</text>
+      </view>
+       <!--第三个-->
+      <view class="rank_item">
+        <text class="ranknum">NO.3</text>
+        <!--头像-->
+        <view class="rank_img2">
+          <image src='../../images/erha.jpg'></image>
+        </view>
+        <!--昵称-->
+        <text class="ranknickname">小株</text>
+        <text class='rank_votenum'>1000票</text>
+      </view>
+    </view>
+  </view>
+  <!--清除浮动  使view能够被撑开 自动适应大小-->
+  <view class='clear'></view>
+</view>
+  <!--排行列表-->
+  <view class='ranklist_view'>
+    <template is="ranklist"></template>
+  </view>
+
+

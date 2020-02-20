@@ -1,0 +1,63 @@
+/* pages/main/main-item/main-item.wxss */
+.content{
+    background:#AFEEEE;
+    min-height:100%;
+}
+.Vimge {
+  display: inline-block;
+   width: 50%;
+   float: left;
+}
+.detail{
+    padding:20rpx 20rpx 10rpx 20rpx;
+    color:#fff;
+    font-size:14px;
+    line-height:20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-line-clamp:2;
+}
+.ratingw{
+   color:burlywood;
+    font-size:16px;
+    font-weight:900;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.rating{
+    color:rgb(49, 157, 134);
+    font-size:16px;
+    font-weight:900;
+}
+.movie-img{
+    position: relative;
+    z-index:1;
+    margin-bottom:20rpx;
+    padding-left: 20rpx;
+    width: 90%;
+    height: 380rpx; 
+}
+.xq-button{
+    background: #3ad1ab;
+    width: 100%;
+    height: 90rpx;
+    font-size:16px;
+    font-weight:900;
+    color: #fff;
+}
+.move-po{
+  color: #ffff;
+  text-align: center;
+  line-height: 60rpx;
+  font-size:16px;
+  font-weight:900;
+  position: absolute;
+  z-index: 2;
+  background: #666;
+  width: 120rpx;
+  height: 60rpx;
+  top: 0rpx;
+  left: 20rpx;
+}

@@ -1,0 +1,15 @@
+<import src="../../main/main-item/main-item.wxml" />
+<view class='title'>
+  <image src='../{{activity.activity_img}}'></image>
+</view>
+<view class="Dimge">
+   <view class="findmain">
+    <input bindinput="bindinMain" value="{{inputValue}}" bindconfirm='getMainFind' type='text' name="works_name" class="find_text" placeholder="请输入作品名"></input>
+    <view class='finding' catchtap='getMainFind'>搜索</view>
+   </view>
+</view>
+<block wx:for="{{workslist}}"wx:key="key">
+  <view catchtap='tovotedetails' data-postId="{{item.works_id}}">
+    <template is="main-item" data="{{...item}}"></template>
+  </view>
+</block>

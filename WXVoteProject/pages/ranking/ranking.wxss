@@ -1,0 +1,112 @@
+@import "ranklist/ranklist.wxss";
+
+.topView{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topView .endtimeview{
+  font-size: 32rpx;
+  color: #686f72a1;
+}
+.topView .remainview{
+  font-size: 40rpx;
+  color: #2f3233a1;
+}
+
+.titleview{
+  background-color: #3ad1ab;
+  height: 80rpx;
+  color: #fff;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  margin: 20rpx;
+}
+.rank_box{
+  
+  width:90%;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  margin-bottom: 15px;
+}
+.rank_box .ranknum{
+  width: 100%;
+  display: block;
+  color: #f90;
+  font-size: 28rpx;
+  font-weight: 600;
+  text-align: center;
+}
+.rank_item{
+  width:30%;
+  float: left;
+}
+.rank_item1{
+  width:40%;
+  float: left;
+}
+.big_rankbox{
+  margin:0 20rpx;
+
+}
+
+.rank_img2 {
+    width: 120rpx;
+    height: 120rpx;
+    background: #fff;
+    margin: 56rpx auto 0;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.rank_img2 image{
+    width: 120rpx;
+    height: 120rpx;
+
+}
+
+
+.rank_img1 {
+    width: 148rpx;
+    height: 148rpx;
+    background: #fff;
+    margin: 14px auto 0;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.rank_img1 image{
+    width: 148rpx;
+    height: 148rpx;
+
+}
+.ranknickname{
+  display: block;
+  margin: 10rpx auto 0;
+  text-align: center;
+  font-size: 26rpx;
+  color: #686f72a1;
+}
+.rank_votenum{
+   text-align: center;
+   display: block;
+   font-size: 28rpx;
+   font-weight:bold;
+   color: #3ad1ab;
+}
+.ranknickname1{
+  display: block;
+  margin: 10rpx auto 0;
+  text-align: center;
+  font-size: 26rpx;
+  font-weight:bold;
+  color: #686f72a1;
+}
+.ranklist_view{
+  margin-top:30rpx; 
+}
+.clear{
+  clear: both;
+}

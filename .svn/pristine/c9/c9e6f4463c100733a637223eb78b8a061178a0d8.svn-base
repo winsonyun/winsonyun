@@ -1,0 +1,23 @@
+<!--pages/main/main-item/main-item.wxml-->
+<template name="main-item">
+  <view class='content'>
+      <view class='Vimge' style='position:relative'>
+        <image class="movie-img" src='../../images/comment/train-1.jpg'></image>
+        <view class='move-po' style=' position: absolute'>编号:1</view>
+        <view class="detail">
+            <text class="ratingw">一号选手\n</text>
+            <text class="rating">0票</text>
+             <button class='xq-button'>详情</button>
+        </view>
+      </view>
+      <view class='Vimge' style='position:relative'>
+        <image class="movie-img" src='../../images/comment/train-1.jpg'></image>
+        <view class='move-po' style=' position: absolute'>编号:2</view>
+        <view class="detail">
+            <text class="ratingw">二号选手\n</text>
+            <text class="rating">10000票</text>
+             <button class='xq-button'>详情</button>
+        </view>
+      </view>
+  </view>
+</template>

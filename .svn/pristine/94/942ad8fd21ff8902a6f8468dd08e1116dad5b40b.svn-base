@@ -1,0 +1,26 @@
+@import "../vote-activity-item/vote-activity-item.wxss";
+.find{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
+  margin: 20rpx; 
+}
+.find input{
+  width:600rpx;
+  height: 60rpx;
+  font-size: 35rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 20rpx; 
+}
+.finding{
+  display: block;
+  width: 150rpx;
+  height: 60rpx;
+  background-color: #3ad1ab;
+  color: white;
+  font-size: 35rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 20rpx; 
+}
